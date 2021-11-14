@@ -218,15 +218,15 @@ async def cb_handler(client, query):
         await query.message.edit_text(Translation.START_TEXT.format(query.from_user.mention, DEV_USERNAME), reply_markup=InlineKeyboardMarkup(
                [
                    [
-                       InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{BOT_USERNAME}?startgroup=true')
+                       InlineKeyboardButton('⚜️ My Developer ⚜️', url=f'https://t.me/SBKUNJAVA')
                    ],
                    [
-                       InlineKeyboardButton(GROUP, url=AA),
-                       InlineKeyboardButton(CHANNEL, url=CHANNEL_LINK)
+                       InlineKeyboardButton(Film🎬House, url=AA),
+                       InlineKeyboardButton(FilmHouse_2, url=CHANNEL_LINK)
                    ],
                    [
                        InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-                       InlineKeyboardButton('😊 About', callback_data='about')
+                       InlineKeyboardButton('🔰 About', callback_data='about')
                    ]
                ]
            )  
@@ -235,18 +235,18 @@ async def cb_handler(client, query):
         await query.message.edit_text(Translation.HELP_TEXT, reply_markup=InlineKeyboardMarkup(
                [
                    [
-                         InlineKeyboardButton("Filter♂️", callback_data="filter1"),
-                         InlineKeyboardButton("AutoFilter♂️", callback_data="autofilter1")
+                         InlineKeyboardButton("🥳 My Owner", url="https://t.me/FILMHOUSE_Kerala2"),
+                         InlineKeyboardButton("👨‍🔬 My Creator", url="https://t.me/SBKUNJAVA")
                    ],
                    [
-                         InlineKeyboardButton("Extra Mode♂️", callback_data="info"),
-                         InlineKeyboardButton("Connection♂️", callback_data="connection")
+                         InlineKeyboardButton("📢 Updates", url="https://t.me/SB_Movies1"),
+                         InlineKeyboardButton("👥 Support", url="https://t.me/Film_House2")
                    ],
                    [
-                         InlineKeyboardButton("🤠 Status 🤠", callback_data="ooooooooo")
+                         InlineKeyboardButton("💢 ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ 💢", url="https://youtube.com/c/THCV20")
                    ],
                    [
-                         InlineKeyboardButton("🏕️ Home", callback_data="start"),
+                         InlineKeyboardButton("🎪Home", callback_data="start"),
                          InlineKeyboardButton("🗑️ Close 🗑️", callback_data="close"),
                          InlineKeyboardButton(" About 🔥", callback_data="about")
                    ]
@@ -257,11 +257,11 @@ async def cb_handler(client, query):
         await query.message.edit_text(Translation.ABOUT_TEXT.format(BOT_USERNAME, DEV_USERNAME, DEV_NAME, BOT_USERNAME), reply_markup=InlineKeyboardMarkup(
                [
                    [
-                         InlineKeyboardButton("📦 Source", callback_data="source"),
-                         InlineKeyboardButton("Dev 🤠", callback_data="devmuhammed")
+                         InlineKeyboardButton("🗣️ Source Code", url="https://t.me/joinchat/aYbIjDgZqY9lYjQ9"),
+                         InlineKeyboardButton("🤴 Dev 🤴", callback_data="devmuhammed")
                    ],
                    [
-                         InlineKeyboardButton("🏕️ Home", callback_data="start"),
+                         InlineKeyboardButton("🎪 Home", callback_data="start"),
                          InlineKeyboardButton("Close 🗑️", callback_data="close")
                    ]
                ]
@@ -360,7 +360,7 @@ async def cb_handler(client, query):
                [
                    [
                        InlineKeyboardButton("🔙 Back", callback_data="about"),
-                       InlineKeyboardButton("🥳 Credits", callback_data="creditsmuhammmed")
+                       InlineKeyboardButton("👨‍🔬 My Creator", url="https://t.me/SBKUNJAVA")
                    ]
                ]
            )
