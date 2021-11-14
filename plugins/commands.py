@@ -80,9 +80,9 @@ async def start(bot, message):
         caption=Translation.START_TEXT.format(
                 message.from_user.mention, DEV_USERNAME),
         reply_markup=InlineKeyboardMarkup([[
-              InlineKeyboardButton('⚜️ My Developer ⚜️', url='http://t.me/donlee_robot?startgroup=true')
+              InlineKeyboardButton('⚜️ My Developer ⚜️', url='https://t.me/SBKUNJAVA')
               ],[
-              InlineKeyboardButton(FilmHouse, url=HAAAAAAAAA),
+              InlineKeyboardButton(Film🎬House, url=HAAAAAAAAA),
               InlineKeyboardButton(FilmHouse_2, url=CHANNEL_LINK)
               ],[
               InlineKeyboardButton('ℹ️ Help', callback_data='help'),
