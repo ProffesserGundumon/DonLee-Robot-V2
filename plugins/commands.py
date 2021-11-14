@@ -47,7 +47,7 @@ async def start(bot, message):
             await message.reply_text(
                 text=FORCE_SUB_TEXT.format(message.from_user.mention),
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="🔔 Join", url=f"https://t.me/{update_channel}")]       
+                    [ InlineKeyboardButton(text="📢 Join  Updates Channel 📢", url=f"https://t.me/{update_channel}")]       
               ])
             )
             return
@@ -80,13 +80,13 @@ async def start(bot, message):
         caption=Translation.START_TEXT.format(
                 message.from_user.mention, DEV_USERNAME),
         reply_markup=InlineKeyboardMarkup([[
-              InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/donlee_robot?startgroup=true')
+              InlineKeyboardButton('⚜️ My Developer ⚜️', url='http://t.me/donlee_robot?startgroup=true')
               ],[
-              InlineKeyboardButton(GROUP, url=HAAAAAAAAA),
-              InlineKeyboardButton(CHANNEL, url=CHANNEL_LINK)
+              InlineKeyboardButton(FilmHouse, url=HAAAAAAAAA),
+              InlineKeyboardButton(FilmHouse_2, url=CHANNEL_LINK)
               ],[
               InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-              InlineKeyboardButton('😊 About', callback_data='about')
+              InlineKeyboardButton('🔰 About', callback_data='about')
               ]]
         ),
         parse_mode="html",
@@ -105,18 +105,18 @@ async def help(bot, message):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                         InlineKeyboardButton("Filter♂️", callback_data="filter1"),
-                         InlineKeyboardButton("AutoFilter♂️", callback_data="autofilter1")
+                         InlineKeyboardButton("🥳 My Owner", url="https://t.me/FILMHOUSE_Kerala2"),
+                         InlineKeyboardButton("👨‍🔬 My Creator", url="https://t.me/SBKUNJAVA")
                     ],
                     [
-                         InlineKeyboardButton("Extra Mode♂️", callback_data="info"),
-                         InlineKeyboardButton("Connection♂️", callback_data="connection")
+                         InlineKeyboardButton("📢 Updates", url="https://t.me/SB_Movies1"),
+                         InlineKeyboardButton("👥 Support", url="https://t.me/Film_House2")
                     ],
                     [
-                         InlineKeyboardButton("🤠 Status 🤠", callback_data="ooooooooo")
+                         InlineKeyboardButton("💢 ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ 💢", url="https://youtube.com/c/THCV20")
                     ],
                     [
-                         InlineKeyboardButton("🏕️ Home", callback_data="start"),
+                         InlineKeyboardButton("🎪Home", callback_data="start"),
                          InlineKeyboardButton("🗑️ Close 🗑️", callback_data="close"),
                          InlineKeyboardButton("About 🔥", callback_data="about")
 
@@ -138,17 +138,17 @@ async def about(bot, message):
                     [
                          InlineKeyboardButton
                              (
-                                 "📦 Source", callback_data="source"
+                                 "🗣️ Source Code", url="https://t.me/joinchat/aYbIjDgZqY9lYjQ9"
                              ),
                          InlineKeyboardButton
                              (
-                                 "Dev 🤠", callback_data="devmuhammed"
+                                 "🤴 Dev 🤴", callback_data="devmuhammed"
                              )
                     ],
                     [
                          InlineKeyboardButton
                              (
-                                 "🏕️ Home", callback_data="start"
+                                 "🎪 Home", callback_data="start"
                              ),
                          InlineKeyboardButton
                              (
@@ -171,23 +171,23 @@ async def sub(bot, message):
                     [
                          InlineKeyboardButton
                              (                                 
-                                 "📣Group", url="t.me/mo_tech_group"
+                                 "📣Group", url="t.me/Film_House2"
                              ),
                          InlineKeyboardButton
                              (
-                                 "📢Channel", url="t.me/mo_tech_yt"
+                                 "📢Channel", url="t.me/SB_Movies1"
                              )
                     ],
                     [
                          InlineKeyboardButton
                              (
-                                 "😟 Build a New Bot 😟", url="https://youtu.be/NrbMc93aCzA"
+                                 "👨‍🔬 My Creator", url="https://t.me/SBKUNJAVA"
                              )
                     ],
                     [
                          InlineKeyboardButton
                              (
-                                 "💥Subscribe youtube Channel💥", url="https://www.youtube.com/c/MoTech_YT"
+                                 "💢 ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ 💢", url="https://youtube.com/c/THCV20"
                              )
                     ],
                     [
