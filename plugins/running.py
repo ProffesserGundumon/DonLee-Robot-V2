@@ -432,7 +432,7 @@ async def auto_filter(bot, update):
                 bot_ = FIND.get("bot_details")
                 file_link = f"https://t.me/{bot_.username}?start={unique_id}"
             if BUTTON_MODE == "single":
-               button_text = f"[{file_size}]📽️ {file_name}"
+               button_text = f"🧧{file_size}▫️{file_name}"
                results.append(
 
                 [
@@ -474,8 +474,8 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("Next ⏩", callback_data=f"navigate(0|next|{query})"),
-                    InlineKeyboardButton(f"🧾 1/{len_result if len_result < max_pages else max_pages}", callback_data="ignore"),
+                    InlineKeyboardButton("🎪𝔾𝕆 𝕋𝕆 ℕ𝔼𝕏𝕋 P𝔸𝔾𝔼🎪", callback_data=f"navigate(0|next|{query})"),
+                    InlineKeyboardButton(f"🧧P𝔸𝔾𝔼𝕊 1/{len_result if len_result < max_pages else max_pages} 🧧", callback_data="ignore"),
                 ]
             )
 
