@@ -545,16 +545,18 @@ async def auto_filter(bot, update):
             imdb = await donlee_imdb(the_query)
             await bot.send_photo(
                 photo=movie_url,
-                caption=f"""↪️ Requested: {query}
-🎞️ Title: <a href={imdb['url']}>{imdb.get('title')}
-🎭 Genres: {imdb.get('genres')}
-📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
-🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
-🗃️ Total Files : {(len_results)}
-📑 Total Page : 1/{len_result if len_result < max_pages else max_pages}
-👤 Requested By : {update.from_user.mention}
-🖋 StoryLine: <code>{imdb.get('plot')} </code>"
-☑️ Chat : {update.chat.title}""",
+                caption=f"""🎬𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query}
+🎞️𝐓𝐢𝐭𝐥𝐞:- <a href={imdb['url']}>{imdb.get('title')}
+🎭𝐆𝐞𝐧𝐫𝐞𝐬:- {imdb.get('genres')}
+📆𝐘𝐞𝐚𝐫:- <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
+🌟𝐑𝐚𝐭𝐢𝐧𝐠𝐬:- <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
+😇𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {(len_results)}
+📑𝐓𝐨𝐭𝐚𝐥 𝐏𝐚𝐠𝐞:- 1/{len_result if len_result < max_pages else max_pages}
+⚡𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention}
+🎪𝐆𝐫𝐨𝐮𝐩:- {update.chat.title}
+⭕𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲⭕
+
+<b>പടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇</b>""",
                 reply_markup=reply_markup,
                 chat_id=update.chat.id,
                 reply_to_message_id=update.message_id,
@@ -567,12 +569,14 @@ async def auto_filter(bot, update):
           try:
               await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""↪️ Requested: {query}
-🗃️ Total Files : {(len_results)}
-📑 Total Page : 1/{len_result if len_result < max_pages else max_pages}
-👤 Requested By : {update.from_user.mention}
-☑️ Chat : {update.chat.title}
-""",
+                text=f"""🎬𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query}
+😇𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {(len_results)}
+📑𝐓𝐨𝐭𝐚𝐥 𝐏𝐚𝐠𝐞:- 1/{len_result if len_result < max_pages else max_pages}
+⚡𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention}
+🎪𝐆𝐫𝐨𝐮𝐩:- {update.chat.title}
+⭕𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲⭕
+
+<b>പടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇</b>""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
